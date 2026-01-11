@@ -3,6 +3,12 @@
 
 <hr>
 
+## Background
+
+ClipSp is a kernel driver that is responsible for managing and verifying licenses on the system, among a few other things. It is part of the larger CLiP (Client Licensing Platform) DRM system introduced with Windows 10 and 11.
+
+You can read this [blog post](https://massgrave.dev/blog/keyhole) describing a vulnerability in ClipSp if you want to learn more about it.
+
 ## Usage
 
 There's a configuration file (offsets.txt) that you need to modify according to the ClipSp version you're trying to decrypt.
