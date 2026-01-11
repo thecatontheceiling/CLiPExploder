@@ -45,6 +45,4 @@ The 5th pair is referenced by a few unexported/unnamed functions. You can find t
 
 I've found that installing the **hrtng** IDA plugin and pressing `Shift` + `X` shows the pseudocode of the xref rather than just disassembly. This makes finding what you need much easier, as you can simply skip over xrefs called with offsets you already know.
 
-The 6th pair is referenced by functions that are encrypted. This means you will need to run `CLiPExploder` with your unfinished configuration once to decrypt the functions referencing the last pair.
-
-The 6th pair is referenced by functions that are encrypted. This means you will need to run `CLiPExploder` with your unfinished configuration once to decrypt the functions referencing the last pair. After this, the same process applies here as with the 5th pair.
+The 6th pair is referenced by functions that are encrypted. This means you will need to run `CLiPExploder` with your unfinished configuration once to decrypt the functions referencing the last pair. After this, the same process applies here as with the 5th pair. 
