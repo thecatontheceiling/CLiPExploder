@@ -11,11 +11,16 @@ You can read this [blog post](https://massgrave.dev/blog/keyhole) describing a v
 
 ## Usage
 
-There's a configuration file (offsets.txt) that you need to modify according to the ClipSp version you're trying to decrypt.
+There's a configuration file (offsets.txt) that you need to make according to the ClipSp version you're trying to decrypt.
 The format is a comma-separated list of 3 offsets. The last two offsets should point to the data sections (DataConst & DataRW), and the first offset should correspond to the function responsible for decrypting the data sections.
 An example configuration file for ClipSp.sys version 19041.1741 is included in the repository.
 
 Check [GUIDE.md](GUIDE.md) for instructions on finding these offsets for your version of ClipSp.
+
+After figuring out the offsets, place the driver next to CLiPExploder. CLiPExploder by default looks for a file called `clipsp.sys` and outputs to `clipsp_decrypted.sys`, but you can specify both of these things with command line arguments:
+```
+CLiPExploder.exe <input path> <output path>
+```
 
 ## Building
 
